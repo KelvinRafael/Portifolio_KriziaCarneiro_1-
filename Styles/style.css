@@ -133,6 +133,10 @@ body{
 
 }
 
+#div_servicos h2{
+    font-size: 2vw;
+}
+
 #lista_servicos1{
     display: flex;
     justify-content: center;
@@ -415,9 +419,15 @@ footer div{
         padding-bottom: 2vw;
     }
 
+    #tituloServicos{
+        background-color: red;
+    }
+
     .card{
         padding-top: 1vw;
+
     }
+
     
     .card p {
         width: 100%;
@@ -425,6 +435,26 @@ footer div{
 
     .card div {
         width: 80%;
+    }
+
+    #div_areas ul li{
+        font-size: 2.5vw;
+    }
+
+    #icone{
+        /* width: 2vw; */
+    }
+
+    #whatsapp{
+        font-size: 2vw;
+    }
+
+    #paragrafo{
+        font-size: 2vw;
+    }
+
+    #dicas{
+        font-size: 4vw;
     }
 }
 
