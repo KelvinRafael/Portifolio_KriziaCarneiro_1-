@@ -14,6 +14,10 @@
 body{
     background: linear-gradient(360deg, #472BEF 0%, rgba(7, 172, 106, 0.7) 35%, #98EDDA 100%);
     /* background: linear-gradient(345deg, rgba(2,0,36,1) 0%, rgba(106,9,121,0.41360294117647056) 35%, rgba(0,212,255,1) 100%); */
+    /* background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-textura-empoeirado-grunge_1048-9793.jpg?w=740&t=st=1700944698~exp=1700945298~hmac=5e609ad2ea91a0228a3b359031cbb619b47c1ebe80f6e42376fcf9f46415fd36'); */
+    /* z-index: -1; */
+    /* position: absolute; */
+    /* color: white; */
 }
 
 #nome{
@@ -162,6 +166,10 @@ body{
     margin: auto;
     margin-top: 2vw;
     margin-bottom: 2vw;
+}
+
+#cards_servicos h3{
+    color: rgb(4, 189, 102);
 }
 
 .card{
@@ -346,18 +354,18 @@ body{
     text-align: center;
     background-color: black;
 
-    & video {
-
-        margin: 0;
-        padding: 0;
-        border-radius: 2vw;
-    }
-
     & p{
-        color: white;
         padding-top: 1vw;
     }
     
+}
+
+video {
+
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    border-radius: 2vw;
 }
 
 a{
@@ -394,3 +402,29 @@ footer div{
 #desenvolvedor a{
     color: rgb(226, 226, 19);
 }
+
+/* =========================Media Query============================== */
+
+@media (max-width: 600px) {
+
+    #cards_servicos{
+        display: block;
+        background-color: white;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 2vw;
+    }
+
+    .card{
+        padding-top: 1vw;
+    }
+    
+    .card p {
+        width: 100%;
+    }
+
+    .card div {
+        width: 80%;
+    }
+}
+
