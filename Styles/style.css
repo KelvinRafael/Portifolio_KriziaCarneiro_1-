@@ -283,7 +283,9 @@ footer div{
 
     #div_servicos h2{
         /* color: red; */
-        font-size: 3vw;
+        font-size: 4vw;
+        font-weight: bolder;
+        padding: 2vw;
     }
 
     .card{
@@ -292,7 +294,6 @@ footer div{
         margin: 0px;
         padding: 0px;
         box-shadow: 0vw 0vw 0vw rgb(0, 180, 75, 0.3);
-        /* border-radius: 1vw; */
         border: none;
 
     }
@@ -300,16 +301,21 @@ footer div{
     
     .card p {
         width: 100%;
+        font-size: 3vw;
     }
 
     .card img {
-        width: 50%;
+        width: 100%;
         margin: auto;
-        padding-top: 2vw;
+        /* padding-top: 2vw; */
+        border-radius: 1vw;
+        /* border: 1px solid gray; */
     }
 
     .card div{
         width: 100%;
+        /* border: 10px solid gray; */
+
     }
 
     #div_areas ul li{
@@ -317,7 +323,7 @@ footer div{
     }
 
     #whatsapp{
-        font-size: 2vw;
+        font-size: 2.5vw;
         color: rgb(0, 255, 64);
     }
 
@@ -331,6 +337,15 @@ footer div{
 
     .carousel-inner{
         width: 100%;
+    }
+
+    #video_insta p{
+        padding-top: 3vw;
+        font-size: 2vw;
+    }
+
+    #video_insta a{
+        font-size: 2.5vw;
     }
 
 }
