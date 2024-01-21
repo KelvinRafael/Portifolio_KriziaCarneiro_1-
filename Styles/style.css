@@ -189,51 +189,6 @@ body{
     }
 }
 
-#carrossel_intagram{
-    display: flex;
-    text-align: center;
-    margin-top: 2vw;
-    justify-content: center;
-
-}
-
-
-#carrossel_intagram .post_insta_f1{
-    width: 18%;
-    border-radius: 2vw;
-    margin: 0;
-    box-shadow: 0vw 1vw rgb(56, 56, 56);
-    margin-left: 1vw;
-    margin-right: 1vw;
-    animation: movementRight 2s;
-}
-
-#carrossel_intagram .post_insta_f2{
-    width: 18%;
-    border-radius: 2vw;
-    margin: 0;
-    box-shadow: 0vw 1vw rgb(56, 56, 56);
-    margin-left: 1vw;
-    margin-right: 1vw;
-    animation: movementLeft 2s;
-}
-
-.div_right{
-    margin: auto;
-    margin-left: 0px;
-    margin-right: 0px;
-    animation-delay: 4s;
-}
-
-.arrow{
-    height: 3vw;
-    background-color: white;
-    box-shadow: 0vw 0vw 1vw rgba(0, 255, 106, 0.6);
-    border-radius: 50%;
-    filter: brightness(2.3);
-    animation: esvanecer 4s;
-}
-
 #arrowLeft{
     rotate: 180deg;
     display: none;
@@ -241,57 +196,6 @@ body{
 
 .post_insta_f2{
     display: none;
-}
-
-.arrow:hover{
-    background-color: rgb(7, 185, 111);
-}
-
-@keyframes esvanecer {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-
-@keyframes movementRight {
-    
-    from{
-        opacity: 0;
-        transform: translate(10vw);
-    }
-
-    /* 50%{
-        opacity: 0.5;
-        transform: translate(5vw);
-    } */
-
-    to{
-        opacity: 1;
-        transform: translate(0vw);
-    }
-
-}
-
-@keyframes movementLeft {
-    
-    from{
-        opacity: 0;
-        transform: translate(-10vw);
-    }
-
-    /* 50%{
-        opacity: 0.5;
-        transform: translate(5vw);
-    } */
-
-    to{
-        opacity: 1;
-        transform: translate(0vw);
-    }
-
 }
 
 /* =========================Quinta sessão - Video apresentação Instagram============================== */
@@ -303,12 +207,8 @@ body{
     
 }
 
-#arrow_gif{
-    width: 3%;
-    rotate: 120deg;
-    /* filter: brightness(2); */
-    filter: grayscale(10);
-
+#whatsapp{
+    color: rgb(0, 255, 64);
 }
 
 #video_insta{
@@ -317,6 +217,11 @@ body{
 
     & p{
         padding-top: 1vw;
+        color: white;
+    }
+
+    & a{
+        color: rgb(255, 77, 106);
     }
     
 }
@@ -344,13 +249,6 @@ footer{
 
 footer div{
     color: white;
-}
-
-#icone{
-    width: 1%;
-    margin-top: 1vw;
-    padding-right: 0.4vw;
-    /* height: 2%; */
 }
 
 #desenvolvedor{
@@ -420,6 +318,7 @@ footer div{
 
     #whatsapp{
         font-size: 2vw;
+        color: rgb(0, 255, 64);
     }
 
     #paragrafo{
@@ -428,6 +327,10 @@ footer div{
 
     #dicas{
         font-size: 4vw;
+    }
+
+    .carousel-inner{
+        width: 100%;
     }
 
 }
