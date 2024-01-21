@@ -1,3 +1,4 @@
+
 function right (){
 
     var p1 = document.getElementById('post1');

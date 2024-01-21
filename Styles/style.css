@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 
+
 *{
     margin: 0;
 }
@@ -20,12 +21,15 @@ body{
     /* color: white; */
 }
 
-#nome{
-    color: var(--color_font);
-    margin-bottom: 2vw;
-    margin-top: 3vw;
-    text-align: center;
-    font-family: 'Dancig-Script';
+
+.navCarrossel{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.navCarrossel img{
+    width: 100%;
 }
 
 /* =========================Primeira sessão - Areas============================== */
@@ -64,71 +68,24 @@ body{
     /* position: relative; */
 }
 
-.photo{
-    box-shadow: 0vw 2vw 4vw hsla(0, 0%, 0%, 0.4);
-    /* border: 2px solid rgb(4, 182, 57); */
-    position: absolute;
-    opacity: 0;
-    left: calc(50% - 10%);
-    animation: slide 7s infinite;
+.secCarrosselInsta{
+    width: 80%;
+    margin: auto;
+    padding: 2vw;
 }
 
-
-
-@keyframes slide {
+.c-carrosselInsta{
     
-    0%{
-        transform: translateX(15vw);
-        opacity: 0;
-        /* position: absolute; */
-    }
-    
-    10%{
-        transform: translateX(0);
-        opacity: 1;
-        /* position: absolute; */
-    }
-
-    20%{
-        transform: translateX(0);
-        opacity: 1;
-        /* position: absolute; */
-    }
-
-    30%{
-        transform: translateX(-15vw);
-        opacity: 0;
-        /* position: absolute; */
-    }
-
-    100%{
-        transform: translateX(-15vw);
-        opacity: 0;
-        /* position: absolute; */
-    }
-}
-
-#photo2{
-    animation-delay: 2s;
-}
-
-#photo3{
-    animation-delay: 4s;
-}
-
-.photo{
-    width: 20%;
-    margin-left: 0.3vw;
-    margin-right: 0.3vw;
-    border-radius: 1vw;
-    /* opacity: 1; */
+    border-top-right-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    box-shadow: 0px 0vw 1vw black;
 }
 
 
 /* =========================Terceira sessão - Serviços============================== */
 
 #div_servicos{
-    margin-top: 35vw;
+    margin-top: 3vw;
     text-align: center;   
 
 }
@@ -409,22 +366,36 @@ footer div{
 
 /* =========================Media Query============================== */
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
     #cards_servicos{
         display: block;
         background-color: white;
         margin: auto;
+        margin-top: 0px;
+        padding-top: 0px;
         text-align: center;
         padding-bottom: 2vw;
+
     }
 
-    #tituloServicos{
-        background-color: red;
+    #cards_servicos div{
+        margin-top: 0px;
+    }
+
+    #div_servicos h2{
+        /* color: red; */
+        font-size: 3vw;
     }
 
     .card{
-        padding-top: 1vw;
+        box-shadow: 0px;
+        background-color: red;
+        margin: 0px;
+        padding: 0px;
+        box-shadow: 0vw 0vw 0vw rgb(0, 180, 75, 0.3);
+        /* border-radius: 1vw; */
+        border: none;
 
     }
 
@@ -433,16 +404,18 @@ footer div{
         width: 100%;
     }
 
-    .card div {
-        width: 80%;
+    .card img {
+        width: 50%;
+        margin: auto;
+        padding-top: 2vw;
+    }
+
+    .card div{
+        width: 100%;
     }
 
     #div_areas ul li{
         font-size: 2.5vw;
-    }
-
-    #icone{
-        /* width: 2vw; */
     }
 
     #whatsapp{
@@ -456,5 +429,6 @@ footer div{
     #dicas{
         font-size: 4vw;
     }
+
 }
 

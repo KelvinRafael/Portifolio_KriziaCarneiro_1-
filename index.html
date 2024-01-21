@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krizia Carneiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    
 </head>
 <body>
     
-    <div>
-        <h1 id="nome">
-            KRIZIA CARNEIRO
-        </h1>
+    <div class="navCarrossel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
-
-    <div id="div_areas">
-        <ul id="lista">
-            <li>Fisioterapeuta</li>
-            <li>Massoterapeuta</li>
-            <li>Instrutora de Pilates</li>
-        </ul>
-    </div>
-
-    <div id="div_carrossel">
-        <img src="images/photo1.jpg" alt="" class="photo" id="photo1">
-        <img src="images/photo2.jpg" alt="" class="photo" id="photo2">
-        <img src="images/photo3.jpg" alt="" class="photo" id="photo3">
-    </div>
-
 
     <div id="div_servicos">
 
@@ -76,44 +86,38 @@
     </div>
     
     <div id="div_instagram">
-        <img src="" alt=""> <!-- Aqui ficará uma GIF de setas apontado para baixo (Talvez) -->
-        <h2 id="dicas">Algumas dicas</h2>
-        <div id="div_cards">
 
-            <div id="carrossel_intagram">
+        <div id="d-carrosselInstagram">
 
-                <div class="div_right">
-                    <img src="images/arrow_left.png" alt="" id="arrowLeft" class="arrow">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner secCarrosselInsta">
+
+                  <div class="carousel-item active ">
+                    <img src="images/MASSOTERAPIA1.jpg" class="d-block w-100 c-carrosselInsta" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/TERAPIAS.jpg" class="d-block w-100 c-carrosselInsta" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/FISIOTERAPIA1.jpg" class="d-block w-100 c-carrosselInsta" alt="...">
+                  </div>
+
                 </div>
-
-
-                <!-- <img src="images/post_insta6.jpg" alt="" class="post_insta_f1" id="post1">
-                <img src="images/post_insta6.jpg" alt="" class="post_insta_f1" id="post2">
-                <img src="images/post_insta6.jpg" alt="" class="post_insta_f1" id="post3">
-                <img src="images/post_insta6.jpg" alt="" class="post_insta_f2" id="post4">
-                <img src="images/post_insta6.jpg" alt="" class="post_insta_f2" id="post5">
-                <img src="images/post_insta6.jpg" alt="" class="post_insta_f2" id="post6"> -->
-
-
-                <img src="images/post_insta1.jpg" alt="" class="post_insta_f1" id="post1">
-                <img src="images/post_insta2.jpg" alt="" class="post_insta_f1" id="post2">
-                <img src="images/post_insta3.jpg" alt="" class="post_insta_f1" id="post3">
-                <img src="images/post_insta4.jpg" alt="" class="post_insta_f2" id="post4">
-                <img src="images/post_insta5.jpg" alt="" class="post_insta_f2" id="post5">
-                <img src="images/post_insta6.jpg" alt="" class="post_insta_f2" id="post6">
-
-                <div class="div_right">
-                    <img src="images/arrow_right.png" alt="" id="arrowRight" class="arrow">
-                </div>
-
-
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
         </div>
 
         <!-- <p>Siga-me para mais dicas como essas e para solicitações de atendimento clicando no link abaixo</p> Esse texto é provisório, vou ver com a Krizia o que colocar aqui -->
 
-        <p class="p_more">Para mais dicas e informações, siga-me clicando no link abaixo<img src="videos/arror.gif" alt="" id="arrow_gif"></p>
+        <!-- <p class="p_more">Para mais dicas e informações, siga-me clicando no link abaixo<img src="videos/arror.gif" alt="" id="arrow_gif"></p> -->
 
         <div id="video_insta">
             <!-- <p>Siga-me para mais</p> -->
@@ -136,6 +140,8 @@
     </footer>
 </body>
 <script src="Scripts/scripts.js"></script>
+<script src="Scripts/CarrosselNav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
 
 <!-- Ideias:
